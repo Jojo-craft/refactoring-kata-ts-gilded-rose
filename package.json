@@ -4,7 +4,9 @@
   "description": "Gilded Rose refactoring kata in TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watch",
+    "coverage": "jest --coverage"
   },
   "devDependencies": {
     "@stryker-mutator/core": "^6.3.0",

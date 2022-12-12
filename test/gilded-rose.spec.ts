@@ -1,7 +1,7 @@
 import {GildedRose} from '../app/gilded-rose';
 import {Item} from '../app/item';
 
-function newItemList(): Array<Item> {
+function getItems(): Array<Item> {
     return [
         new Item('+5 Dexterity Vest', 10, 20),
         new Item('Aged Brie', 2, 0),
@@ -17,7 +17,7 @@ function newItemList(): Array<Item> {
 
 describe('Gilded Rose', () => {
     it('should foo', () => {
-        const gildedRose = new GildedRose(newItemList());
+        const gildedRose = new GildedRose(getItems());
         const items = gildedRose.updateQuality();
         expect(items[0].name).toBe('fixme');
     });
