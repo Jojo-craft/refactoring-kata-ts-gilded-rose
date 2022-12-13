@@ -16,9 +16,9 @@ function getItems(): Array<Item> {
 }
 
 describe('Gilded Rose', () => {
-    it('should foo', () => {
+    it('should ...', () => {
         const gildedRose = new GildedRose(getItems());
         const items = gildedRose.updateQuality();
-        expect(items[0].name).toBe('fixme');
+        expect(items[0].name).toBe('+5 Dexterity Vest');
     });
 });
